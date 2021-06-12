@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+
 }
 
 android {
@@ -13,10 +15,14 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    dataBinding {
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -41,5 +47,25 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
+//   libraries for project
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'androidx.multidex:multidex:2.0.1'
+     implementation 'com.squareup.okhttp3:logging-interceptor:4.2.2'
+     implementation "io.reactivex.rxjava2:rxandroid:$rxandroid"
+     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+     implementation "androidx.lifecycle:lifecycle-runtime:2.3.1"
+     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+     annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.3.1"
+     implementation 'org.jetbrains.anko:anko-commons:0.10.8'
+     //GLide
+     implementation "com.github.bumptech.glide:glide:$gradleVersion"
+     kapt "com.github.bumptech.glide:compiler:$gradleVersion"
+     implementation 'com.github.bumptech.glide:okhttp3-integration:4.7.1'
 }
