@@ -11,12 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SpaceXFanApplication">
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name="com.example.spaceXFanApplication.ui.authentication.signIn.SignInActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.spaceXFanApplication.ui.home.HomeActivity" />
     </application>
 
 </manifest>

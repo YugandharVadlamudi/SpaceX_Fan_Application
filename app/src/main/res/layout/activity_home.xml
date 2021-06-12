@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark"
+        tools:context=".ui.home.HomeActivity">
+        <TextView
+            android:id="@+id/txtToolbarHeading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/home"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/sand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/txtToolbarSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/sign_out"
+            android:layout_marginEnd="@dimen/dp20"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/sand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tlHome"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerVertical="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtToolbarHeading"
+            app:tabBackground="@drawable/tab_selector_background"
+            app:tabIndicatorColor="@null"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="#FFFFFF"
+            app:tabTextAppearance="@style/TabLayoutStyle"
+            app:tabTextColor="@color/warmGreySeven">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiSpaceXRocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/space_x_rockets" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiFavoriteRocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favorite_rockets" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiUpcomingRocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upcoming_launches" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <FrameLayout
+            android:id="@+id/flContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tlHome" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
