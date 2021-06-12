@@ -1,4 +1,4 @@
-package com.example.spaceXFanApplication.ui.authentication.signIn
+package com.example.spacexfanapplication.ui.sigiin
 
 import com.example.spacexfanapplication.base.BaseViewModel
 

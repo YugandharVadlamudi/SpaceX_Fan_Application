@@ -3,22 +3,30 @@
     package="com.example.spacexfanapplication">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/appName"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:name=".MyApplication"
         android:supportsRtl="true"
         android:theme="@style/Theme.SpaceXFanApplication">
-        <activity android:name=".MainActivity">
-        </activity>
-        <activity android:name="com.example.spaceXFanApplication.ui.authentication.signIn.SignInActivity" >
+        <activity android:name=".MainActivity"></activity>
+
+        <activity
+            android:name="com.example.spacexfanapplication.ui.splashScreen.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.spaceXFanApplication.ui.home.HomeActivity" />
+        <activity android:name="com.example.spaceXFanApplication.ui.sigiin.SignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme"/>
+        <activity android:name=".ui.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme"/>
     </application>
 
 </manifest>
