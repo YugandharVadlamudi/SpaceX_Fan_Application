@@ -1,4 +1,4 @@
-package com.example.spaceXFanApplication.widgets
+package com.example.spacexfanapplication.widgets
 
 import android.content.Context
 import android.util.AttributeSet
