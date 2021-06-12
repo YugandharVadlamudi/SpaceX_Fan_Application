@@ -1,0 +1,2 @@
+rootProject.name = "SpaceX Fan Application"
+include ':app'
