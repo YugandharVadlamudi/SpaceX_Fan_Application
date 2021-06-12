@@ -1,4 +1,4 @@
-package com.example.spaceXFanApplication.ui.home
+package com.example.spacexfanapplication.ui.home
 
 import com.example.spacexfanapplication.base.BaseViewModel
 

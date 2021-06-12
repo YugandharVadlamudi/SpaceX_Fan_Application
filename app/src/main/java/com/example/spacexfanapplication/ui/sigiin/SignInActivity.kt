@@ -1,13 +1,14 @@
-package com.example.spaceXFanApplication.ui.authentication.signIn
+package com.example.spaceXFanApplication.ui.sigiin
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import com.example.spaceXFanApplication.ui.home.HomeActivity
 import com.example.spacexfanapplication.MyApplication
 import com.example.spacexfanapplication.R
 import com.example.spacexfanapplication.base.BaseActivity
 import com.example.spacexfanapplication.databinding.ActivitySignInBinding
+import com.example.spacexfanapplication.ui.home.HomeActivity
+import com.example.spacexfanapplication.ui.sigiin.SignInViewModel
 import com.example.spacexfanapplication.util.hideKeyboard
 import com.example.spacexfanapplication.util.isValidEmail
 import com.google.firebase.auth.FirebaseAuth
