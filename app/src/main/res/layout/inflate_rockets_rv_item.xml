@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clRvItemRoot"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgThumbnail"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp70"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/txtItemHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/sand"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintEnd_toStartOf="@+id/iconFav"
+            app:layout_constraintStart_toEndOf="@+id/imgThumbnail"
+            app:layout_constraintTop_toTopOf="@+id/imgThumbnail"
+            tools:text="Heading Test" />
+
+        <TextView
+            android:id="@+id/txtItemDescription"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp5"
+            android:ellipsize="end"
+            android:maxLines="3"
+            tools:text="Description Test"
+            android:textColor="@color/warmGreyTwo"
+            android:textSize="@dimen/sp12"
+            app:layout_constraintBottom_toBottomOf="@+id/imgThumbnail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgThumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/txtItemHeading" />
+
+
+        <ImageView
+            android:id="@+id/iconFav"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_marginEnd="@dimen/dp15"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_un_favorite"
+            app:layout_constraintBottom_toBottomOf="@+id/txtItemHeading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtItemHeading" />
+
+        <View
+            android:id="@+id/viewUnderlineItem"
+            android:layout_width="0dp"
+            android:layout_height="0.025dp"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginStart="@dimen/dp15"
+            android:background="@color/charcoal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgThumbnail" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
