@@ -7,4 +7,90 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#15161E</color>
+    <color name="colorPrimaryDark">#15161E</color>
+    <color name="colorAccent">#15161E</color>
+    <color name="snack_color">#FEA12B</color>
+    <color name="blue">#082CF1</color>
+    <color name="edit_text_under_line">#484848</color>
+    <color name="red">#FF0000</color>
+    <color name="toolBarColor">#15161E</color>
+    <color name="btn_color">#DEBE4D</color>
+    <color name="login_fb">#1055AB</color>
+    <color name="login_google">#4285F4</color>
+    <color name="snack_red_color">#e90d0d</color>
+    <color name="snack_green_color">#7ED321</color>
+    <color name="dull_grey">#909090</color>
+
+
+    <color name="sand">#debe4d</color>
+    <color name="darkGrey">#242528</color>
+    <color name="darkTwo">#1c1d23</color>
+    <color name="darkGreyTrasparent">#80242528</color>
+    <color name="desert">#d9ba4b</color>
+    <color name="dark">#15161e</color>
+    <color name="niceBlue">#1055ab</color>
+    <color name="warmGrey">#878787</color>
+    <color name="whiteTwo">#f1f1f1</color>
+    <color name="whiteFour">#e5e5e5</color>
+    <color name="greyishBrown">#484848</color>
+    <color name="greyishBrownTwo">#5c5b58</color>
+    <color name="greyishBrownPlan">#666666</color>
+    <color name="greyishBrownFive">#525252</color>
+    <color name="greyishTwo">#aaaaaa</color>
+    <color name="greyish">#ababab</color>
+    <color name="warmGreyTwo">#888888</color>
+    <color name="warmGreyThree">#999999</color>
+    <color name="multi_editText_color">#D7D7D7</color>
+    <color name="greyishBrownThree">#3f3f3f</color>
+    <color name="charcoal">#3f3f3c</color>
+    <color name="charcoalGrey">#2c3137</color>
+    <color name="charcoal_Two">#3d3d3a</color>
+
+    <color name="navyGreen">#392e07</color>
+    <color name="warmGreyFour">#767676</color>
+    <color name="gray">#979797</color>
+    <color name="setting_gray">#767676</color>
+    <color name="push_gray">#F3F3F3</color>
+
+    <color name="colorTrasparent">#00000000</color>
+    <color name="warmGreyFive">#949494</color>
+    <color name="color919191">#5b5b5b</color>
+    <color name="slateGrey">#6b6b6e</color>
+    <color name="push_notification_between">#313131</color>
+
+    <color name="pinkishGrey">#bbbbbb</color>
+    <color name="pinkishGreyThree">#c5c5c5</color>
+    <color name="pinkishGreyTwo">#bababa</color>
+    <color name="pinkishGreyFive">#cfcfcf</color>
+    <color name="pinkishGreySix">#838383</color>
+    <color name="warmGreySeven">#6f6f6f</color>
+    <color name="warmGreySix">#8f8f8f</color>
+    <color name="push_notif_off">#565656</color>
+    <color name="delete_item">#525252</color>
+    <color name="product_preferce_name">#B5B5B5</color>
+    <color name="brownishGrey">#696969</color>
+    <color name="info_light_color">#888888</color>
+    <color name="transparentBlack">#2C080808</color>
+    <color name="ceruleanBlue">#0475e8</color>
+    <color name="greyishBrownSeven">#444444</color>
+    <color name="opengym_price_gray_text">#afafaf</color>
+
+
+    <color name="dodgerBlue">#3687f1</color>
+    <color name="softBlue">#68a0f3</color>
+
+    <color name="greyshFour">#a4a4a4</color>
+    <color name="setting_nested_view_background">#242528</color>
+    <color name="in_app_color">#004FAE</color>
+    <color name="in_app_setting">#333333</color>
+    <color name="video_transparents">#4D000000</color>
+    <color name="black_half_transparent">#80000000</color>
+    <color name="notification_minute_ago">#BFBFBF</color>
+    <color name="notification_desc">#E5E5E5</color>
+
+
+
+
 </resources>

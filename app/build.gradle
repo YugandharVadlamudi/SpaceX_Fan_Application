@@ -2,8 +2,8 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
-
 }
+apply from: 'autodimension.gradle'
 
 android {
     compileSdkVersion 30

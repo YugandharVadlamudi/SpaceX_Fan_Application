@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/errorView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp25"
+    android:paddingRight="@dimen/dp25">
+
+    <ImageView
+        android:id="@+id/imgErrorIcon"
+        android:layout_width="@dimen/dp220"
+        android:layout_height="@dimen/dp176"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"
+        tools:src="@drawable/error" />
+
+
+    <TextView
+        android:id="@+id/txtErrorHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center"
+        android:textColor="@color/sand"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        tools:text="You have no reminders" />
+
+    <TextView
+        android:id="@+id/txtErrorDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginRight="@dimen/_10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp12"
+        tools:text="Set a reminder for medicines,
+to drink enough water, or to take a break at work." />
+
+    <Button
+        android:id="@+id/btnError"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@color/sand"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:text="@string/retry"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+
+</LinearLayout>
