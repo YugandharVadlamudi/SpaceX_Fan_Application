@@ -1,4 +1,4 @@
-package com.example.spaceXFanApplication.ui.home.fragments.upcomingRockets
+package com.example.spacexfanapplication.ui.home.upcomingRockets
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

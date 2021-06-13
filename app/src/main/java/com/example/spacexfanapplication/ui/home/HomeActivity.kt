@@ -2,7 +2,7 @@ package com.example.spacexfanapplication.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.spaceXFanApplication.ui.home.fragments.upcomingRockets.UpcomingLaunchesFragment
+import com.example.spacexfanapplication.ui.home.upcomingRockets.UpcomingLaunchesFragment
 import com.example.spacexfanapplication.R
 import com.example.spacexfanapplication.base.BaseActivity
 import com.example.spacexfanapplication.databinding.ActivityHomeBinding

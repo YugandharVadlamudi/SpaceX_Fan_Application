@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.launchDetails.LaunchDetailsActivity">
+
+        <ImageView
+            android:id="@+id/imgRocketThumbNail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="w,1:1"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="@dimen/dp10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:id="@+id/iconFav"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:contentDescription="@null"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp15"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_un_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgRocketThumbNail" />
+
+        <TextView
+            android:id="@+id/txtHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp15"
+            android:textColor="@color/sand"
+            android:textSize="@dimen/sp26"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iconFav"
+            app:layout_constraintEnd_toStartOf="@+id/iconFav"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iconFav"
+            tools:text="Heading Test" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dp15"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/warmGreyTwo"
+            android:textSize="@dimen/sp20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/iconFav"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iconFav"
+            tools:text="Description Test" />
+        <include
+            android:id="@+id/progressLaunchDetails"
+            layout="@layout/base_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
