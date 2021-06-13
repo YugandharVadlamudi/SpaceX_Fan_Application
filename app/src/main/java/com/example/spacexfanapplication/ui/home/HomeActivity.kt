@@ -2,6 +2,7 @@ package com.example.spacexfanapplication.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.spaceXFanApplication.ui.home.fragments.upcomingRockets.UpcomingLaunchesFragment
 import com.example.spacexfanapplication.R
 import com.example.spacexfanapplication.base.BaseActivity
 import com.example.spacexfanapplication.databinding.ActivityHomeBinding
@@ -43,9 +44,9 @@ class HomeActivity : BaseActivity<ActivityHomeBinding, HomeViewModel>() {
                     1 -> {
                         loadFragment(FavoriteRocketFragment())
                     }
-                    /*2 -> {
+                    2 -> {
                         loadFragment(UpcomingLaunchesFragment())
-                    }*/
+                    }
                 }
 
             }
