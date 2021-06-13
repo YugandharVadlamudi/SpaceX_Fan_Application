@@ -1,15 +1,18 @@
 package com.example.spacexfanapplication.ui.home.favoriteRockets
 
 import android.app.Activity.RESULT_OK
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.spacexfanapplication.ui.home.launchDetails.LaunchDetailsActivity
 import com.example.spacexfanapplication.R
 import com.example.spacexfanapplication.base.BaseFragment
 import com.example.spacexfanapplication.databinding.FragmentFavoriteRocketsBinding
 import com.example.spacexfanapplication.ui.home.adapter.RocketsAdapter
 import com.example.spacexfanapplication.ui.home.model.LaunchDetailsResponse
+import com.example.spacexfanapplication.util.BUNDLE_ROCKET_DETAILS
 
 class FavoriteRocketFragment: BaseFragment<FragmentFavoriteRocketsBinding, FavoriteRocketViewModel>() {
     private var rocketsAdapter: RocketsAdapter? = null
@@ -62,9 +65,9 @@ class FavoriteRocketFragment: BaseFragment<FragmentFavoriteRocketsBinding, Favor
             }
 
             override fun onItemClick(data: LaunchDetailsResponse) {
-                /*val intent=Intent(context, LaunchDetailsActivity::class.java)
+                val intent= Intent(context, LaunchDetailsActivity::class.java)
                 intent.putExtra(BUNDLE_ROCKET_DETAILS,data)
-                launchDetailsRequest.launch(intent)*/
+                launchDetailsRequest.launch(intent)
             }
 
         })

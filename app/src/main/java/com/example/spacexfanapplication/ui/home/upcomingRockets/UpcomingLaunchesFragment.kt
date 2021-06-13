@@ -1,10 +1,12 @@
-package com.example.spaceXFanApplication.ui.home.fragments.upcomingRockets
+package com.example.spacexfanapplication.ui.home.upcomingRockets
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.spacexfanapplication.ui.home.upcomingRockets.UpcomingRocketViewModel
+import com.example.spacexfanapplication.ui.home.launchDetails.LaunchDetailsActivity
 import com.example.spacexfanapplication.R
 import com.example.spacexfanapplication.base.BaseFragment
 import com.example.spacexfanapplication.databinding.FragmentUpcomingRocketsBinding
@@ -63,9 +65,9 @@ class UpcomingLaunchesFragment:
             }
 
             override fun onItemClick(data: LaunchDetailsResponse) {
-               /* val intent= Intent(context, LaunchDetailsActivity::class.java)
+                val intent= Intent(context, LaunchDetailsActivity::class.java)
                 intent.putExtra(BUNDLE_ROCKET_DETAILS,data)
-                launchDetailsRequest.launch(intent)*/
+                launchDetailsRequest.launch(intent)
             }
 
         })

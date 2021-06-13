@@ -27,6 +27,9 @@
         <activity android:name=".ui.home.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreenTheme"/>
+        <activity android:name=".ui.home.launchDetails.LaunchDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme"/>
     </application>
 
 </manifest>
