@@ -3,10 +3,10 @@ package com.example.spacexfanapplication.ui.home.spacexrockets
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.spaceXFanApplication.ui.home.fragments.adapter.RocketsAdapter
 import com.example.spacexfanapplication.R
 import com.example.spacexfanapplication.base.BaseFragment
 import com.example.spacexfanapplication.databinding.FragmentSpaceXRocketsBinding
+import com.example.spacexfanapplication.ui.home.adapter.RocketsAdapter
 import com.example.spacexfanapplication.ui.home.model.ErrorViewModel
 import com.example.spacexfanapplication.ui.home.model.LaunchDetailsResponse
 import com.example.spacexfanapplication.ui.home.spaceXRockets.SpaceXRocketViewModel

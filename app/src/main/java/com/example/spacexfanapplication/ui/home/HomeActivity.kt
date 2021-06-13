@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import com.example.spacexfanapplication.R
 import com.example.spacexfanapplication.base.BaseActivity
 import com.example.spacexfanapplication.databinding.ActivityHomeBinding
+import com.example.spacexfanapplication.ui.home.favoriteRockets.FavoriteRocketFragment
 import com.example.spacexfanapplication.ui.home.spacexrockets.SpaceXRocketsFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
@@ -39,10 +40,10 @@ class HomeActivity : BaseActivity<ActivityHomeBinding, HomeViewModel>() {
                     0 -> {
                         loadFragment(SpaceXRocketsFragment())
                     }
-                    /*1 -> {
+                    1 -> {
                         loadFragment(FavoriteRocketFragment())
                     }
-                    2 -> {
+                    /*2 -> {
                         loadFragment(UpcomingLaunchesFragment())
                     }*/
                 }
