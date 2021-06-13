@@ -1,4 +1,4 @@
-package com.example.spaceXFanApplication.ui.sigiin
+package com.example.spacexfanapplication.ui.sigiin
 
 import android.content.Intent
 import android.os.Bundle
