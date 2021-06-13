@@ -1,6 +1,7 @@
 package com.example.spacexfanapplication.base
 
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Bundle
@@ -9,6 +10,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModelProvider
 import com.example.spacexfanapplication.R
+import com.example.spacexfanapplication.ui.sigiin.SignInActivity
 import com.example.spacexfanapplication.util.hideKeyboard
 import com.example.spacexfanapplication.util.showSnackBar
 
@@ -65,7 +67,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel> :
 
 
     fun navigateToLoginScreen() {
-//        val intent = Intent(this@BaseActivity, SignInActivity::class.java)
+        val intent = Intent(this@BaseActivity, SignInActivity::class.java)
         startActivity(intent)
         finishAffinity()
     }

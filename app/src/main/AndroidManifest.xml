@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.spaceXFanApplication.ui.sigiin.SignInActivity"
+        <activity android:name="com.example.spacexfanapplication.ui.sigiin.SignInActivity"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreenTheme"/>
         <activity android:name=".ui.home.HomeActivity"
