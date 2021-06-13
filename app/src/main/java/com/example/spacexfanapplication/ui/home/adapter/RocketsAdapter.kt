@@ -1,4 +1,4 @@
-package com.example.spaceXFanApplication.ui.home.fragments.adapter
+package com.example.spacexfanapplication.ui.home.adapter
 
 import android.view.LayoutInflater
 import android.view.View
