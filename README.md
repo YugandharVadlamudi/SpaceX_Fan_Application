@@ -16,4 +16,11 @@ Project Pieces
 
 4)Siginout 
 
+Sigin Screen
+
+Login Details email-> vestelTest@mailinator.com
+
+Password-> 1234.Abc
+
+
 **Branches**
