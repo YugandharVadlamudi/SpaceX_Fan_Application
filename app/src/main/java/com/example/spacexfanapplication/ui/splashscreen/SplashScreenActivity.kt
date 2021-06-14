@@ -1,4 +1,4 @@
-package com.example.spacexfanapplication.ui.splashScreen
+package com.example.spacexfanapplication.ui.splashscreen
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import com.example.spacexfanapplication.R
 import com.example.spacexfanapplication.base.BaseActivity
 import com.example.spacexfanapplication.databinding.ActivitySplashScreenBinding
 import com.example.spacexfanapplication.ui.home.HomeActivity
-import com.example.spacexfanapplication.ui.sigiin.SignInActivity
+import com.example.spacexfanapplication.ui.login.SignInActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class SplashScreenActivity : BaseActivity<ActivitySplashScreenBinding, SplashScreenViewModel>() {
