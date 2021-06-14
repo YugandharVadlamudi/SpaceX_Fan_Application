@@ -1,4 +1,4 @@
-package com.example.spacexfanapplication.ui.splashScreen
+package com.example.spacexfanapplication.ui.splashscreen
 
 import com.example.spacexfanapplication.base.BaseViewModel
 

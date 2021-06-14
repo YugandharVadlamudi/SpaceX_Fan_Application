@@ -10,7 +10,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModelProvider
 import com.example.spacexfanapplication.R
-import com.example.spacexfanapplication.ui.sigiin.SignInActivity
+import com.example.spacexfanapplication.ui.login.SignInActivity
 import com.example.spacexfanapplication.util.hideKeyboard
 import com.example.spacexfanapplication.util.showSnackBar
 
